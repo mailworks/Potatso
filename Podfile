@@ -3,6 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
+# 崩溃异常统计
 def fabric
     pod 'Fabric'
     pod 'Crashlytics'
@@ -11,6 +12,7 @@ end
 def library
     pod 'KissXML', '~> 5.2.2'
     pod 'ICSMainFramework', :path => "./Library/ICSMainFramework/"
+    # host App 和 extension直接通信
     pod 'MMWormhole', '~> 2.0.0'
     pod 'KeychainAccess'
 end
@@ -29,12 +31,17 @@ end
 
 target "Potatso" do
     pod 'Aspects', :path => "./Library/Aspects/"
+    # A declarative Auto Layout DSL for Swift
     pod 'Cartography'
     pod 'AsyncSwift'
+    # A Swift Extension for UIColor
     pod 'SwiftColor'
+    # A utility that reminds your iPhone app's users to review the app
     pod 'Appirater'
+    # 表单组件  XLForm的swift版本
     pod 'Eureka'
     pod 'MBProgressHUD'
+    # urlScheme
     pod 'CallbackURLKit', :path => "./Library/CallbackURLKit"
     pod 'ICDMaterialActivityIndicatorView', '~> 0.1.0'
     pod 'Reveal-iOS-SDK', '~> 1.6.2', :configurations => ['Debug']
@@ -43,6 +50,7 @@ target "Potatso" do
     pod 'Alamofire'
     pod 'ObjectMapper'
     pod 'CocoaLumberjack/Swift', '~> 3.0.0'
+    # advanced NSOperations usage
     pod 'PSOperations'
     tunnel
     library

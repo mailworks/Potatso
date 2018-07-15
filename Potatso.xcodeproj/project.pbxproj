@@ -277,6 +277,13 @@
 			remoteGlobalIDString = 9BDA625A1CAE2576007F2581;
 			remoteInfo = PacketProcessor;
 		};
+		AECE2FC220FA0649003BD062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B0CFA031C1C0B1A007BD7C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B0CFA0A1C1C0B1A007BD7C6;
+			remoteInfo = Potatso;
+		};
 		B86B08E81D17F84900613014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B86B08E31D17F84900613014 /* ShadowPath.xcodeproj */;
@@ -859,6 +866,7 @@
 		A692B80DC5DB316AA1DED8CB /* Pods_TodayWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C3522CED51B0487ECEE41F /* Pods-TodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayWidget/Pods-TodayWidget.release.xcconfig"; sourceTree = "<group>"; };
 		ADA787CDCD42A827F8E72947 /* Pods_PotatsoLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotatsoLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECE2FC120FA00DA003BD062 /* Confidential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confidential.h; sourceTree = "<group>"; };
 		B803A6951D0165EA003EA9AA /* CloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudViewController.swift; sourceTree = "<group>"; };
 		B803A6971D02B768003EA9AA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = API.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B821B0EF1D51DD8F0061E7B9 /* KeychainUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = KeychainUtils.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -908,7 +916,6 @@
 		B8CCC6E41CFDCFD8000E7E2E /* RuleSetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleSetCell.swift; sourceTree = "<group>"; };
 		B8CCC6E61CFDD99E000E7E2E /* ProxyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyListViewController.swift; sourceTree = "<group>"; };
 		B8CCC6EA1CFF1501000E7E2E /* ProxyRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProxyRow.swift; path = ../ProxyRow.swift; sourceTree = "<group>"; };
-		B8CF2F991D3DF69E009C9FF3 /* Confidential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confidential.h; sourceTree = "<group>"; };
 		B8D7F1831D518FF000B115F3 /* DBUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUtils.swift; sourceTree = "<group>"; };
 		B8D8CC091D506CB900CE6C0D /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		B8D8CC101D50D5CD00CE6C0D /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
@@ -1114,11 +1121,11 @@
 				9B17F8EC1C53392D00679FCB /* Utils */,
 				B8D8CC0F1D50D5B700CE6C0D /* Sync */,
 				9B1F745D1C2F83AD0028C1A6 /* config.plist */,
-				B8CF2F991D3DF69E009C9FF3 /* Confidential.h */,
 				9B0CFA151C1C0B1B007BD7C6 /* Assets.xcassets */,
 				9B0CFA171C1C0B1B007BD7C6 /* LaunchScreen.storyboard */,
 				9B0CFA1A1C1C0B1B007BD7C6 /* Info.plist */,
 				B8319A0F1D1BD696001E50C2 /* Localizable.strings */,
+				AECE2FC120FA00DA003BD062 /* Confidential.h */,
 			);
 			path = Potatso;
 			sourceTree = "<group>";
@@ -2136,6 +2143,7 @@
 			);
 			dependencies = (
 				9B07D6B71CB7A6A900182C1B /* PBXTargetDependency */,
+				AECE2FC320FA0649003BD062 /* PBXTargetDependency */,
 			);
 			name = PotatsoLibraryTests;
 			productName = PotatsoLibraryTests;
@@ -2147,7 +2155,6 @@
 			buildConfigurationList = 9B0CFA281C1C0B1B007BD7C6 /* Build configuration list for PBXNativeTarget "Potatso" */;
 			buildPhases = (
 				D36E9F0177778530B0CF35C1 /* [CP] Check Pods Manifest.lock */,
-				B8CF2F9A1D3DF6C7009C9FF3 /* Confidential */,
 				9B0CFA071C1C0B1A007BD7C6 /* Sources */,
 				9B0CFA081C1C0B1A007BD7C6 /* Frameworks */,
 				9B0CFA091C1C0B1A007BD7C6 /* Resources */,
@@ -2316,10 +2323,12 @@
 				TargetAttributes = {
 					9B07D6AF1CB7A6A900182C1B = {
 						CreatedOnToolsVersion = 7.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9B0CFA0A1C1C0B1A007BD7C6;
 					};
 					9B0CFA0A1C1C0B1A007BD7C6 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = XGKHW634KL;
+						DevelopmentTeam = BW96G9Z5R7;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2352,11 +2361,12 @@
 					9B0CFA1E1C1C0B1B007BD7C6 = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 						TestTargetID = 9B0CFA0A1C1C0B1A007BD7C6;
 					};
 					9B8193B11CBCFEE700BE320D = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = XGKHW634KL;
+						DevelopmentTeam = BW96G9Z5R7;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2376,7 +2386,7 @@
 					};
 					9B8705F91C1D788F00651424 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = XGKHW634KL;
+						DevelopmentTeam = BW96G9Z5R7;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2713,20 +2723,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
-		};
-		B8CF2F9A1D3DF6C7009C9FF3 /* Confidential */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Confidential;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "file=\"${PROJECT_DIR}/Potatso/Confidential.h\"\nif [ -f $file ]\nthen\n    echo \"Confidential.h found.\"\nelse\n    echo \"Confidential.h not found.\"\n    src=\"${PROJECT_DIR}/Potatso/DefaultConfidential.h\"\n    rsync -av $src $file\nfi";
 		};
 		D36E9F0177778530B0CF35C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3106,6 +3102,11 @@
 			target = 9BDA625A1CAE2576007F2581 /* PacketProcessor */;
 			targetProxy = 9BDA62601CAE2576007F2581 /* PBXContainerItemProxy */;
 		};
+		AECE2FC320FA0649003BD062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B0CFA0A1C1C0B1A007BD7C6 /* Potatso */;
+			targetProxy = AECE2FC220FA0649003BD062 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -3154,7 +3155,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PotatsoLibrary",
@@ -3162,9 +3166,11 @@
 				INFOPLIST_FILE = PotatsoLibraryTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.PotatsoLibraryTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.PotatsoLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potatso.app/Potatso";
 			};
 			name = Debug;
 		};
@@ -3174,7 +3180,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PotatsoLibrary",
@@ -3182,9 +3191,11 @@
 				INFOPLIST_FILE = PotatsoLibraryTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.PotatsoLibraryTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.PotatsoLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potatso.app/Potatso";
 			};
 			name = Release;
 		};
@@ -3291,7 +3302,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3319,7 +3330,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @rpath/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3340,7 +3351,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3363,7 +3374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @rpath/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3379,10 +3390,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PotatsoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.PotatsoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potatso.app/Potatso";
 			};
@@ -3393,10 +3407,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PotatsoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.PotatsoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Potatso.app/Potatso";
 			};
@@ -3413,7 +3430,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -3421,7 +3438,7 @@
 				INFOPLIST_FILE = TodayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.todaywidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.todaywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3437,10 +3454,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -3448,7 +3465,7 @@
 				INFOPLIST_FILE = TodayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.todaywidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.todaywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3467,7 +3484,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3495,7 +3512,7 @@
 					"$(PROJECT_DIR)/PacketTunnel/Shadowsocks/libsodium-ios/lib",
 					"$(PROJECT_DIR)/PacketTunnel",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.tunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3509,10 +3526,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3539,7 +3556,7 @@
 					"$(PROJECT_DIR)/PacketTunnel/Shadowsocks/libsodium-ios/lib",
 					"$(PROJECT_DIR)/PacketTunnel",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.tunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3571,7 +3588,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.PotatsoLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PotatsoLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3605,7 +3622,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.PotatsoLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PotatsoLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -3633,7 +3650,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.PotatsoBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PotatsoBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3661,7 +3678,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.PotatsoBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PotatsoBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -3694,7 +3711,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.PotatsoModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PotatsoModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3727,7 +3744,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatso.PotatsoModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PotatsoModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -3769,7 +3786,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatoso.PacketProcessor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PacketProcessor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/custom\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv4\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv6\"";
@@ -3809,7 +3826,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.wasin.potatoso.PacketProcessor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sany.shadowsocks.PacketProcessor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/custom\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv4\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv6\"";
