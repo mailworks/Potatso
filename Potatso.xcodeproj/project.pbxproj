@@ -160,6 +160,7 @@
 		9BF303461CC8A1F60096588E /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF303451CC8A1F60096588E /* LogDetailViewController.swift */; };
 		9BF3034B1CCA1B060096588E /* BaseEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3034A1CCA1B060096588E /* BaseEmptyView.swift */; };
 		9BF3034D1CCA20D80096588E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3034C1CCA20D80096588E /* Logging.swift */; };
+		AE8D146120FB47E000BD2E32 /* SHFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146020FB47E000BD2E32 /* SHFTabBarController.m */; };
 		B803A6961D0165EA003EA9AA /* CloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6951D0165EA003EA9AA /* CloudViewController.swift */; };
 		B803A6981D02B768003EA9AA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6971D02B768003EA9AA /* API.swift */; };
 		B821B0F01D51DD8F0061E7B9 /* KeychainUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821B0EF1D51DD8F0061E7B9 /* KeychainUtils.swift */; };
@@ -866,6 +867,8 @@
 		A692B80DC5DB316AA1DED8CB /* Pods_TodayWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C3522CED51B0487ECEE41F /* Pods-TodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayWidget/Pods-TodayWidget.release.xcconfig"; sourceTree = "<group>"; };
 		ADA787CDCD42A827F8E72947 /* Pods_PotatsoLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotatsoLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8D145F20FB47E000BD2E32 /* SHFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHFTabBarController.h; sourceTree = "<group>"; };
+		AE8D146020FB47E000BD2E32 /* SHFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHFTabBarController.m; sourceTree = "<group>"; };
 		AECE2FC120FA00DA003BD062 /* Confidential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confidential.h; sourceTree = "<group>"; };
 		B803A6951D0165EA003EA9AA /* CloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudViewController.swift; sourceTree = "<group>"; };
 		B803A6971D02B768003EA9AA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = API.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -1101,6 +1104,7 @@
 		9B0CFA0D1C1C0B1B007BD7C6 /* Potatso */ = {
 			isa = PBXGroup;
 			children = (
+				AE8D145C20FB47A100BD2E32 /* ShuttleFly */,
 				1EF602941F113A660005E0C7 /* GeoLite2-Country.mmdb */,
 				1ECA215E1E05E8C700B32187 /* Potatso.entitlements */,
 				9BC8589F1C33B00200992032 /* Potatso-Bridge-Header.h */,
@@ -2004,6 +2008,15 @@
 			path = udpgw_client;
 			sourceTree = "<group>";
 		};
+		AE8D145C20FB47A100BD2E32 /* ShuttleFly */ = {
+			isa = PBXGroup;
+			children = (
+				AE8D145F20FB47E000BD2E32 /* SHFTabBarController.h */,
+				AE8D146020FB47E000BD2E32 /* SHFTabBarController.m */,
+			);
+			name = ShuttleFly;
+			sourceTree = "<group>";
+		};
 		B821B0F11D5318F80061E7B9 /* iCloud */ = {
 			isa = PBXGroup;
 			children = (
@@ -2860,6 +2873,7 @@
 				B8F7AE3E1D5F178A005CA41E /* CloudSetManager.swift in Sources */,
 				B821B0F31D5334D50061E7B9 /* ActionRow.swift in Sources */,
 				B8D8CC111D50D5CD00CE6C0D /* SyncManager.swift in Sources */,
+				AE8D146120FB47E000BD2E32 /* SHFTabBarController.m in Sources */,
 				B83AA5701D38E6F7007905B4 /* RequestDetailVC.swift in Sources */,
 				B8C0FE151D5E0A9400737454 /* PushLocalChangesOperation.swift in Sources */,
 				B83D3E7D1D2BA8C8007655CE /* Receipt.swift in Sources */,
@@ -3781,6 +3795,7 @@
 					BADVPN_LITTLE_ENDIAN,
 					BADVPN_LIBTSOCKS,
 				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PacketProcessor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3821,6 +3836,7 @@
 					BADVPN_LITTLE_ENDIAN,
 					BADVPN_LIBTSOCKS,
 				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PacketProcessor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
