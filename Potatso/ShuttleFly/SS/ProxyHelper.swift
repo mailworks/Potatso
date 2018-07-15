@@ -14,14 +14,14 @@ class ProxyHelper: NSObject {
     /// <#Description#>
     ///
     /// - Parameter type: SS / SSR
-    @objc static func addProxy(type:String, name:String, host:String, port:String, encryption:String, passwrod:String) -> () {
+    @objc static func addProxy(type:String, name:String, host:String, port:Int, encryption:String, passwrod:String) -> () {
         let proxy = Proxy();
         do {
             proxy.type = ProxyType(rawValue: type)!;
-//            proxy.name = name
-//            proxy.host = host
-//            proxy.port = port
-//            proxy.authscheme = authscheme
+            proxy.name = name;
+            proxy.host = host;
+            proxy.port = port;
+            proxy.authscheme = encryption;
 //            proxy.user = user
 //            proxy.password = password
 //            proxy.ota = ota
