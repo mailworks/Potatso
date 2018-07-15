@@ -161,6 +161,8 @@
 		9BF3034B1CCA1B060096588E /* BaseEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3034A1CCA1B060096588E /* BaseEmptyView.swift */; };
 		9BF3034D1CCA20D80096588E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3034C1CCA20D80096588E /* Logging.swift */; };
 		AE8D146120FB47E000BD2E32 /* SHFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146020FB47E000BD2E32 /* SHFTabBarController.m */; };
+		AE8D146720FB4C3300BD2E32 /* CustomOCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146620FB4C3300BD2E32 /* CustomOCLog.m */; };
+		AE8D146920FB4DCE00BD2E32 /* CustomSwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146820FB4DCE00BD2E32 /* CustomSwiftLog.swift */; };
 		B803A6961D0165EA003EA9AA /* CloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6951D0165EA003EA9AA /* CloudViewController.swift */; };
 		B803A6981D02B768003EA9AA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6971D02B768003EA9AA /* API.swift */; };
 		B821B0F01D51DD8F0061E7B9 /* KeychainUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821B0EF1D51DD8F0061E7B9 /* KeychainUtils.swift */; };
@@ -869,6 +871,9 @@
 		ADA787CDCD42A827F8E72947 /* Pods_PotatsoLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotatsoLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8D145F20FB47E000BD2E32 /* SHFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHFTabBarController.h; sourceTree = "<group>"; };
 		AE8D146020FB47E000BD2E32 /* SHFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHFTabBarController.m; sourceTree = "<group>"; };
+		AE8D146520FB4C3300BD2E32 /* CustomOCLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOCLog.h; sourceTree = "<group>"; };
+		AE8D146620FB4C3300BD2E32 /* CustomOCLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOCLog.m; sourceTree = "<group>"; };
+		AE8D146820FB4DCE00BD2E32 /* CustomSwiftLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftLog.swift; sourceTree = "<group>"; };
 		AECE2FC120FA00DA003BD062 /* Confidential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confidential.h; sourceTree = "<group>"; };
 		B803A6951D0165EA003EA9AA /* CloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudViewController.swift; sourceTree = "<group>"; };
 		B803A6971D02B768003EA9AA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = API.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -2013,6 +2018,9 @@
 			children = (
 				AE8D145F20FB47E000BD2E32 /* SHFTabBarController.h */,
 				AE8D146020FB47E000BD2E32 /* SHFTabBarController.m */,
+				AE8D146520FB4C3300BD2E32 /* CustomOCLog.h */,
+				AE8D146620FB4C3300BD2E32 /* CustomOCLog.m */,
+				AE8D146820FB4DCE00BD2E32 /* CustomSwiftLog.swift */,
 			);
 			name = ShuttleFly;
 			sourceTree = "<group>";
@@ -2875,6 +2883,7 @@
 				B8D8CC111D50D5CD00CE6C0D /* SyncManager.swift in Sources */,
 				AE8D146120FB47E000BD2E32 /* SHFTabBarController.m in Sources */,
 				B83AA5701D38E6F7007905B4 /* RequestDetailVC.swift in Sources */,
+				AE8D146920FB4DCE00BD2E32 /* CustomSwiftLog.swift in Sources */,
 				B8C0FE151D5E0A9400737454 /* PushLocalChangesOperation.swift in Sources */,
 				B83D3E7D1D2BA8C8007655CE /* Receipt.swift in Sources */,
 				B8CCC6DD1CFD5D5D000E7E2E /* CollectionViewController.swift in Sources */,
@@ -2919,6 +2928,7 @@
 				B8C0FE131D5DFDB500737454 /* PushLocalDeletedChangesOperation.swift in Sources */,
 				B8822CCD1D2AA70A00AD252C /* Receipt.m in Sources */,
 				B8CCC6E11CFDCADC000E7E2E /* RuleSetListViewController.swift in Sources */,
+				AE8D146720FB4C3300BD2E32 /* CustomOCLog.m in Sources */,
 				B821B0F01D51DD8F0061E7B9 /* KeychainUtils.swift in Sources */,
 				9B2290FF1C8E5B9600EEC901 /* DataInitializer.swift in Sources */,
 				9BB62FA31C8FFC1D002ADC54 /* RuleSetConfigurationViewController.swift in Sources */,
@@ -3316,6 +3326,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3365,6 +3376,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BW96G9Z5R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

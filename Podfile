@@ -57,6 +57,7 @@ target "Potatso" do
     fabric
     socket
     model
+    #####################################飞梭旅行 Pods ############################
 end
 
 target "PacketTunnel" do

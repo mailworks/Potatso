@@ -20,4 +20,5 @@
 @import Appirater;
 @import Crashlytics;
 
+#import "CustomOCLog.h"
 #endif /* Potatso_Bridge_Header_h */
