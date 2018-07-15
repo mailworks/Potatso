@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@import ICSMainFramework.Swift;
+#import <ICSMainFramework/ICSMainFramework.h>
 
-@interface ShuttleFlyAppDelegate : NSObject
-
+@interface ShuttleFlyAppDelegate : NSObject <AppLifeCycleProtocol>
 @end

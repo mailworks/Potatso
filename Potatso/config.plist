@@ -58,6 +58,10 @@
 		<array>
 			<dict>
 				<key>object</key>
+				<string>ShuttleFlyAppDelegate</string>
+			</dict>
+			<dict>
+				<key>object</key>
 				<string>Potatso.AppInitializer</string>
 			</dict>
 			<dict>

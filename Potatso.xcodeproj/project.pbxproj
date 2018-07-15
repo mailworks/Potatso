@@ -164,6 +164,12 @@
 		AE8D146720FB4C3300BD2E32 /* CustomOCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146620FB4C3300BD2E32 /* CustomOCLog.m */; };
 		AE8D146920FB4DCE00BD2E32 /* CustomSwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146820FB4DCE00BD2E32 /* CustomSwiftLog.swift */; };
 		AE8D146F20FB652100BD2E32 /* ShuttleFlyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D146E20FB652100BD2E32 /* ShuttleFlyAppDelegate.m */; };
+		AE8D147A20FB79B000BD2E32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D147820FB79B000BD2E32 /* MainViewController.m */; };
+		AE8D147B20FB79B000BD2E32 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D147920FB79B000BD2E32 /* MainViewController.xib */; };
+		AE8D147F20FB79C100BD2E32 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D147D20FB79C100BD2E32 /* SettingViewController.m */; };
+		AE8D148020FB79C100BD2E32 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D147E20FB79C100BD2E32 /* SettingViewController.xib */; };
+		AE8D148420FB831B00BD2E32 /* ProxyConfigurationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D148320FB831B00BD2E32 /* ProxyConfigurationHelper.m */; };
+		AE8D148720FB882300BD2E32 /* ProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D148620FB882300BD2E32 /* ProxyHelper.swift */; };
 		B803A6961D0165EA003EA9AA /* CloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6951D0165EA003EA9AA /* CloudViewController.swift */; };
 		B803A6981D02B768003EA9AA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6971D02B768003EA9AA /* API.swift */; };
 		B821B0F01D51DD8F0061E7B9 /* KeychainUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821B0EF1D51DD8F0061E7B9 /* KeychainUtils.swift */; };
@@ -877,6 +883,15 @@
 		AE8D146820FB4DCE00BD2E32 /* CustomSwiftLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftLog.swift; sourceTree = "<group>"; };
 		AE8D146D20FB652100BD2E32 /* ShuttleFlyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShuttleFlyAppDelegate.h; sourceTree = "<group>"; };
 		AE8D146E20FB652100BD2E32 /* ShuttleFlyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShuttleFlyAppDelegate.m; sourceTree = "<group>"; };
+		AE8D147720FB79B000BD2E32 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		AE8D147820FB79B000BD2E32 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		AE8D147920FB79B000BD2E32 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AE8D147C20FB79C100BD2E32 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		AE8D147D20FB79C100BD2E32 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		AE8D147E20FB79C100BD2E32 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		AE8D148220FB831B00BD2E32 /* ProxyConfigurationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyConfigurationHelper.h; sourceTree = "<group>"; };
+		AE8D148320FB831B00BD2E32 /* ProxyConfigurationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyConfigurationHelper.m; sourceTree = "<group>"; };
+		AE8D148620FB882300BD2E32 /* ProxyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyHelper.swift; sourceTree = "<group>"; };
 		AECE2FC120FA00DA003BD062 /* Confidential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confidential.h; sourceTree = "<group>"; };
 		B803A6951D0165EA003EA9AA /* CloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudViewController.swift; sourceTree = "<group>"; };
 		B803A6971D02B768003EA9AA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = API.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -1112,7 +1127,7 @@
 		9B0CFA0D1C1C0B1B007BD7C6 /* Potatso */ = {
 			isa = PBXGroup;
 			children = (
-				AE8D145C20FB47A100BD2E32 /* ShuttleFly */,
+				AE8D147320FB70D400BD2E32 /* ShuttleFly */,
 				1EF602941F113A660005E0C7 /* GeoLite2-Country.mmdb */,
 				1ECA215E1E05E8C700B32187 /* Potatso.entitlements */,
 				9BC8589F1C33B00200992032 /* Potatso-Bridge-Header.h */,
@@ -2016,9 +2031,12 @@
 			path = udpgw_client;
 			sourceTree = "<group>";
 		};
-		AE8D145C20FB47A100BD2E32 /* ShuttleFly */ = {
+		AE8D147320FB70D400BD2E32 /* ShuttleFly */ = {
 			isa = PBXGroup;
 			children = (
+				AE8D148120FB82F200BD2E32 /* SS */,
+				AE8D147620FB717A00BD2E32 /* Base */,
+				AE8D147520FB716700BD2E32 /* Modules */,
 				AE8D146D20FB652100BD2E32 /* ShuttleFlyAppDelegate.h */,
 				AE8D146E20FB652100BD2E32 /* ShuttleFlyAppDelegate.m */,
 				AE8D145F20FB47E000BD2E32 /* SHFTabBarController.h */,
@@ -2027,7 +2045,37 @@
 				AE8D146620FB4C3300BD2E32 /* CustomOCLog.m */,
 				AE8D146820FB4DCE00BD2E32 /* CustomSwiftLog.swift */,
 			);
-			name = ShuttleFly;
+			path = ShuttleFly;
+			sourceTree = "<group>";
+		};
+		AE8D147520FB716700BD2E32 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AE8D147720FB79B000BD2E32 /* MainViewController.h */,
+				AE8D147820FB79B000BD2E32 /* MainViewController.m */,
+				AE8D147920FB79B000BD2E32 /* MainViewController.xib */,
+				AE8D147C20FB79C100BD2E32 /* SettingViewController.h */,
+				AE8D147D20FB79C100BD2E32 /* SettingViewController.m */,
+				AE8D147E20FB79C100BD2E32 /* SettingViewController.xib */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AE8D147620FB717A00BD2E32 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AE8D148120FB82F200BD2E32 /* SS */ = {
+			isa = PBXGroup;
+			children = (
+				AE8D148220FB831B00BD2E32 /* ProxyConfigurationHelper.h */,
+				AE8D148320FB831B00BD2E32 /* ProxyConfigurationHelper.m */,
+				AE8D148620FB882300BD2E32 /* ProxyHelper.swift */,
+			);
+			path = SS;
 			sourceTree = "<group>";
 		};
 		B821B0F11D5318F80061E7B9 /* iCloud */ = {
@@ -2516,7 +2564,9 @@
 				B8319A0D1D1BD696001E50C2 /* Localizable.strings in Resources */,
 				1EF602951F113A660005E0C7 /* GeoLite2-Country.mmdb in Resources */,
 				9B8285471CE20DE40027D15C /* HMScanner.bundle in Resources */,
+				AE8D147B20FB79B000BD2E32 /* MainViewController.xib in Resources */,
 				9B0CFA161C1C0B1B007BD7C6 /* Assets.xcassets in Resources */,
+				AE8D148020FB79C100BD2E32 /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2917,6 +2967,7 @@
 				B83AA5761D38E98A007905B4 /* RequestOverviewVC.swift in Sources */,
 				9B5C00261CBFB35C008DDE7A /* ConfigGroupCell.swift in Sources */,
 				B8C256AE1D1A93DA0074D3B1 /* FlatButton.swift in Sources */,
+				AE8D148720FB882300BD2E32 /* ProxyHelper.swift in Sources */,
 				9B8193ED1CBE4DCA00BE320D /* UrlHandler.swift in Sources */,
 				9B1F74761C3164AD0028C1A6 /* VPN.swift in Sources */,
 				B8A09D7B1D51B9A900A9A989 /* AlertOperation.swift in Sources */,
@@ -2930,7 +2981,9 @@
 				9B1F74601C2F84250028C1A6 /* AppInitializer.swift in Sources */,
 				9B54CC441C1C266C00DDEEBB /* UIViewControllerExtensions.swift in Sources */,
 				9B0CFA0F1C1C0B1B007BD7C6 /* AppDelegate.swift in Sources */,
+				AE8D147F20FB79C100BD2E32 /* SettingViewController.m in Sources */,
 				B8A09D801D51B9A900A9A989 /* RealmCloud.swift in Sources */,
+				AE8D147A20FB79B000BD2E32 /* MainViewController.m in Sources */,
 				B8A09D7E1D51B9A900A9A989 /* PrepareZoneOperation.swift in Sources */,
 				9BB3F73C1CC3D3DE00C2DD05 /* RecentRequestsCell.swift in Sources */,
 				9BD4CACA1CB9600D00F99BF9 /* AlertUtils.swift in Sources */,
@@ -2971,6 +3024,7 @@
 				B83AA5741D38E728007905B4 /* SegmentPageVC.swift in Sources */,
 				9BB3F74F1CC6308000C2DD05 /* RecentRequestsVC.swift in Sources */,
 				B821B0F71D539CFD0061E7B9 /* SyncVC.swift in Sources */,
+				AE8D148420FB831B00BD2E32 /* ProxyConfigurationHelper.m in Sources */,
 				9B8285481CE20DE40027D15C /* HMScanner.m in Sources */,
 				B8A09D7C1D51B9A900A9A989 /* FetchCloudChangesOperation.swift in Sources */,
 				B896A8401D548AAC009E4BF5 /* ICloudSetupOperation.swift in Sources */,

@@ -31,7 +31,6 @@ class UIManager: NSObject, AppLifeCycleProtocol {
         UITabBar.appearance().tintColor = Color.TabItemSelected
 
         keyWindow?.rootViewController = makeRootViewController()
-
         Receipt.shared.validate()
         return true
     }
@@ -44,8 +43,6 @@ class UIManager: NSObject, AppLifeCycleProtocol {
     }
     
     func makeChildViewControllers() -> [UIViewController] {
-        CustomOCLog().log();
-        CustomSwiftLog().log();
         let cons: [(UIViewController.Type, String, String)] = [(HomeVC.self, "Home".localized(), "Home"), (DashboardVC.self, "Statistics".localized(), "Dashboard"), (CollectionViewController.self, "Manage".localized(), "Config"), (SettingsViewController.self, "More".localized(), "More")]
         return cons.map {
             let vc = UINavigationController(rootViewController: $0.init())
