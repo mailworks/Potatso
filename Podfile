@@ -58,6 +58,17 @@ target "Potatso" do
     socket
     model
     #####################################飞梭旅行 Pods ############################
+    pod 'Masonry'
+    pod 'AFNetworking', '~> 3.0'
+    pod 'MBProgressHUD'
+    pod 'YYModel'
+    pod 'IQKeyboardManager', '~> 5.0.7'
+    pod 'TZImagePickerController', '~> 1.9.8'
+    pod 'SDWebImage', '~> 4.2.3'
+    pod 'DZNEmptyDataSet', '~> 1.8.1'
+    pod 'KxMenu', '~> 1'
+    pod 'MJExtension', '~> 3.0.13'
+    pod 'SAMKeychain'
 end
 
 target "PacketTunnel" do

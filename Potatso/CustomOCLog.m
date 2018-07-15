@@ -8,6 +8,7 @@
 
 #import "CustomOCLog.h"
 #import "Potatso-Swift.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @implementation CustomOCLog
 - (void)log {
