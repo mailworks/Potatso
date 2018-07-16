@@ -20,7 +20,7 @@ public enum ManagerError: Error {
     case vpnStartFail
 }
 
-public enum VPNStatus {
+@objc public enum VPNStatus:Int {
     case off
     case connecting
     case on
@@ -33,11 +33,11 @@ public let kDefaultGroupName = "defaultGroupName"
 private let statusIdentifier = "status"
 public let kProxyServiceVPNStatusNotification = "kProxyServiceVPNStatusNotification"
 
-open class Manager {
+@objc open class Manager:NSObject {
     
-    open static let sharedManager = Manager()
+    @objc open static let sharedManager = Manager()
     
-    open fileprivate(set) var vpnStatus = VPNStatus.off {
+    @objc open fileprivate(set) var vpnStatus = VPNStatus.off {
         didSet {
             NotificationCenter.default.post(name: Foundation.Notification.Name(rawValue: kProxyServiceVPNStatusNotification), object: nil)
         }
@@ -51,7 +51,8 @@ open class Manager {
         return getDefaultConfigGroup()
     }
 
-    fileprivate init() {
+    fileprivate override init() {
+        super.init();
         loadProviderManager { (manager) -> Void in
             if let manager = manager {
                 self.updateVPNStatus(manager)
@@ -213,7 +214,7 @@ open class Manager {
 
 extension ConfigurationGroup {
 
-    public var isDefault: Bool {
+    @objc public var isDefault: Bool {
         let defaultUUID = Manager.sharedManager.defaultConfigGroup.uuid
         let isDefault = defaultUUID == uuid
         return isDefault
@@ -427,7 +428,7 @@ extension Manager {
         }
     }
     
-    public func postMessage() {
+    @objc public func postMessage() {
         loadProviderManager { (manager) -> Void in
             if let session = manager?.connection as? NETunnelProviderSession,
                 let message = "Hello".data(using: String.Encoding.utf8), manager?.connection.status != .invalid

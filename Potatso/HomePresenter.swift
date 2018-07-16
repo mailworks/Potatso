@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HomePresenterProtocol: class {
+@objc protocol HomePresenterProtocol: AnyObject {
     func handleRefreshUI()
 }
 
@@ -16,7 +16,7 @@ class HomePresenter: NSObject {
 
     var vc: UIViewController!
 
-    var group: ConfigurationGroup {
+    @objc var group: ConfigurationGroup {
         return CurrentGroupManager.shared.group
     }
 
@@ -24,7 +24,7 @@ class HomePresenter: NSObject {
         return group.proxies.first
     }
 
-    weak var delegate: HomePresenterProtocol?
+    @objc weak var delegate: HomePresenterProtocol?
 
     override init() {
         super.init()
@@ -38,13 +38,13 @@ class HomePresenter: NSObject {
         NotificationCenter.default.removeObserver(self)
     }
 
-    func bindToVC(_ vc: UIViewController) {
+    @objc func bindToVC(_ vc: UIViewController) {
         self.vc = vc
     }
 
     // MARK: - Actions
 
-    func switchVPN() {
+    @objc func switchVPN() {
         VPN.switchVPN(group) { [unowned self] (error) in
             if let error = error {
                 Alert.show(self.vc, message: "\("Fail to switch VPN.".localized()) (\(error))")
