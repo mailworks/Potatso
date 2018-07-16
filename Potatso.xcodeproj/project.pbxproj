@@ -168,7 +168,6 @@
 		AE8D147B20FB79B000BD2E32 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D147920FB79B000BD2E32 /* MainViewController.xib */; };
 		AE8D147F20FB79C100BD2E32 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D147D20FB79C100BD2E32 /* SettingViewController.m */; };
 		AE8D148020FB79C100BD2E32 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D147E20FB79C100BD2E32 /* SettingViewController.xib */; };
-		AE8D148420FB831B00BD2E32 /* ProxyConfigurationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8D148320FB831B00BD2E32 /* ProxyConfigurationHelper.m */; };
 		AE8D148720FB882300BD2E32 /* ProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D148620FB882300BD2E32 /* ProxyHelper.swift */; };
 		B803A6961D0165EA003EA9AA /* CloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6951D0165EA003EA9AA /* CloudViewController.swift */; };
 		B803A6981D02B768003EA9AA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803A6971D02B768003EA9AA /* API.swift */; };
@@ -889,8 +888,6 @@
 		AE8D147C20FB79C100BD2E32 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		AE8D147D20FB79C100BD2E32 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		AE8D147E20FB79C100BD2E32 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		AE8D148220FB831B00BD2E32 /* ProxyConfigurationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyConfigurationHelper.h; sourceTree = "<group>"; };
-		AE8D148320FB831B00BD2E32 /* ProxyConfigurationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyConfigurationHelper.m; sourceTree = "<group>"; };
 		AE8D148620FB882300BD2E32 /* ProxyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyHelper.swift; sourceTree = "<group>"; };
 		AECE2FC120FA00DA003BD062 /* Confidential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Confidential.h; sourceTree = "<group>"; };
 		B803A6951D0165EA003EA9AA /* CloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudViewController.swift; sourceTree = "<group>"; };
@@ -2071,8 +2068,6 @@
 		AE8D148120FB82F200BD2E32 /* SS */ = {
 			isa = PBXGroup;
 			children = (
-				AE8D148220FB831B00BD2E32 /* ProxyConfigurationHelper.h */,
-				AE8D148320FB831B00BD2E32 /* ProxyConfigurationHelper.m */,
 				AE8D148620FB882300BD2E32 /* ProxyHelper.swift */,
 			);
 			path = SS;
@@ -3024,7 +3019,6 @@
 				B83AA5741D38E728007905B4 /* SegmentPageVC.swift in Sources */,
 				9BB3F74F1CC6308000C2DD05 /* RecentRequestsVC.swift in Sources */,
 				B821B0F71D539CFD0061E7B9 /* SyncVC.swift in Sources */,
-				AE8D148420FB831B00BD2E32 /* ProxyConfigurationHelper.m in Sources */,
 				9B8285481CE20DE40027D15C /* HMScanner.m in Sources */,
 				B8A09D7C1D51B9A900A9A989 /* FetchCloudChangesOperation.swift in Sources */,
 				B896A8401D548AAC009E4BF5 /* ICloudSetupOperation.swift in Sources */,

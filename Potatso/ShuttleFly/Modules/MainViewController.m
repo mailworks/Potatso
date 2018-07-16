@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "Potatso-Swift.h"
 
 @interface MainViewController ()
 
@@ -22,6 +23,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)addSSAction:(UIButton *)sender {
+    [ProxyHelper addSSProxyWithName:@"mzengSS" host:@"10.8.3.4" port:8443 encryption:@"rc4-md5" password:@"passwor" isOTA:NO];
+}
+
+- (IBAction)connectAction:(UIButton *)sender {
+    [ProxyHelper addSSRProxyWithName:@"mzengSSR" host:@"10.8.3.4" port:8553 encryption:@"table" password:@"123456" ssrProtocol:@"origin" ssrObfs:@"plain" ssrObfsParam:@""];
 }
 
 /*
